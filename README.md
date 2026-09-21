@@ -1,4 +1,4 @@
-# SimpleHttp
+# SimpleHttpServer
 
 一个使用 **C 语言** 在 Linux 环境下实现的简易 HTTP 静态资源服务器。
 
