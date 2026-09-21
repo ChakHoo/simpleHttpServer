@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTTP Server</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 800px;
+            margin: 50px auto;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <h1>Simple HTTP Server</h1>
+
+    <div class="box">
+        <h2>服务器介绍</h2>
+
+        <p>
+            这是一个使用 C 语言编写的 Linux HTTP 服务器。
+        </p>
+
+        <p>
+            服务器使用 Socket、Epoll 和多线程实现客户端连接和 HTTP 请求处理。
+        </p>
+    </div>
+
+
+    <div class="box">
+        <h2>功能测试</h2>
+
+        <ul>
+            <li>
+                <a href="hello.txt">查看文本文件 hello.txt</a>
+            </li>
+
+            <li>
+                <a href="linux.jpg">查看图片 linux.jpg</a>
+            </li>
+
+            <li>
+                <a href="images/">进入 images 目录</a>
+            </li>
+
+            <li>
+                <a href="docs/">进入 docs 目录</a>
+            </li>
+
+            <li>
+                <a href="not_exist.txt">测试 404 页面</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="box">
+        <h2>项目流程</h2>
+
+        <p>
+            浏览器发送 HTTP GET 请求
+            → 服务器解析请求
+            → 判断文件类型
+            → 返回文件或目录内容。
+        </p>
+    </div>
+
+
+    <div class="box">
+        <h2>图片测试</h2>
+
+        <img src="linux.jpg"
+             width="400"
+             alt="Linux Test Image">
+    </div>
+
+</body>
+
+</html>

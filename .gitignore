@@ -1,0 +1,5 @@
+server
+*.o
+*.out
+.vscode/
+build/
