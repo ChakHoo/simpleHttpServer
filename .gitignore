@@ -3,3 +3,4 @@ server
 *.out
 .vscode/
 build/
+www/
